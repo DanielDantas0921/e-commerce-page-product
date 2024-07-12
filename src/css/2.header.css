@@ -1,0 +1,32 @@
+.header-desktop{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+
+.logo-and-nav{
+    display: flex;
+    align-items: center;
+
+}
+
+
+.logo-and-nav nav{
+    font-size: 1.5rem;
+    margin-left: 3.75rem;
+}
+
+.logo-and-nav nav ul{
+    display: flex;
+    gap: 15px;
+}
+
+.header-desktop .cart-and-avatar{
+    display: flex;
+    align-items: center;
+    
+}
+.header-desktop .cart-and-avatar .cart{
+    width: 30px;
+    margin-right: 2.8rem;
+}

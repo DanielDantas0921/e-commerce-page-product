@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="src/img/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <header class="header-desktop">
+      <div class="logo-and-nav">
+        <img src="./src/img/logo.svg" alt="logo" />
+        <nav>
+          <ul>
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="cart-and-avatar">
+        <img
+          class="cart"
+          src="./src/img/icon-cart.svg"
+          alt="cart"
+          width="22"
+          height="20"
+        />
+        <img
+          src="./src/img/image-avatar.png"
+          alt="image avatar"
+          width="50"
+          height="50"
+        />
+      </div>
+    </header>
+
+    <section class="product-desktop">
+      <div class="product-container">
+        <div class="product-images">
+          <div class="large-image">
+            <img src="./src/img/image-product-1.jpg" alt="" />
+          </div>
+
+          <div class="thumbnail-images"></div>
+        </div>
+
+        <div class="product-description">
+          <h3>Sneaker Company</h3>
+          <h1>Fall Limited Edition <br> Sneakers</h1>
+          <p>
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div class="prices">
+            <h2>$125.00  <span>50%</span></h2>
+            <h3><del>$250.00</del></h3>
+          </div>
+          <div>
+            <div class="input-number">
+                <span>-</span> 
+                <input type="number">
+                <span>+</span>
+            </div>
+            <button>
+                <img src="./src/img/icon-cart.svg" alt="cart"> Add to cart
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
