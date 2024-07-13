@@ -19,7 +19,12 @@
 .logo-and-nav nav ul{
     display: flex;
     gap: 15px;
+    color: var(--storm-gray);
+    font-weight: 200;
+    
 }
+
+
 
 .header-desktop .cart-and-avatar{
     display: flex;
