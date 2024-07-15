@@ -1,0 +1,3 @@
+
+
+arrumar código css para funcionar só no desktop para quando fizer o mobile é só referenciar o mobile

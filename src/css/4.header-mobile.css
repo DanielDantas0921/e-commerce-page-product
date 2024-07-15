@@ -1,0 +1,41 @@
+@media (max-width:2000px){
+    .header-mobile{
+        display: none;
+    }
+}
+
+
+@media (max-width: 800px){
+
+.header-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px;
+}
+
+.menu-and-logo{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu{
+    width: 25px;
+}
+
+.logo{
+    margin-top: -3px;
+}
+
+.cart-and-avatar{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.avatar{
+    width: 40px;
+}
+
+}

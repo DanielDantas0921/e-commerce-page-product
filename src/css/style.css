@@ -1,4 +1,5 @@
 @import "./0.colors.css";
 @import "./1.global.css";
-@import "./2.header.css";
+@import "./2.header-desktop.css";
 @import "./3.product-desktop.css";
+@import "./4.header-mobile.css";
