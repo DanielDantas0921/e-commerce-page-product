@@ -3,11 +3,16 @@
     grid-template-columns: 1fr 1.5fr;
     padding: 2.75rem 7.5rem;
     gap: 5rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .product-desktop .product-images .large-image img{
     width: 100%;
+    min-width: 250px;
     border-radius: 10px;
+    
 }
 
 .product-desktop .thumbnail-images{
@@ -123,6 +128,12 @@
 
     .product-desktop .product-description h1{
         font-size: 2rem;
+    }
+}
+
+@media (max-width: 1000px){
+    .product-desktop .product-description{
+        /* padding: 0; */
     }
 }
 

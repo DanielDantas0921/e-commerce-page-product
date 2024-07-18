@@ -1,0 +1,12 @@
+Seu desafio é construir esta página de produto de comércio eletrônico e fazê-la parecer o mais próximo possível do design.
+
+Você pode usar qualquer ferramenta que desejar para ajudá-lo a completar o desafio. Então, se você tem algo que gostaria de praticar, sinta-se à vontade para tentar.
+
+Seus usuários devem ser capazes de:
+
+ Abra uma galeria lightbox clicando na imagem grande do produto
+ Mude a imagem grande do produto clicando nas pequenas imagens em miniatura
+ Adicione itens ao carrinho
+ Visualize o carrinho e remova itens dele
+ Veja o layout ideal para o site dependendo do tamanho da tela do dispositivo
+ Veja os estados de foco para todos os elementos interativos na página

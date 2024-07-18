@@ -1,0 +1,129 @@
+@media (max-width:2000px){
+    .product-mobile{
+        display: none;
+    }
+}
+
+@media (max-width:800px){
+
+    .product-mobile{
+        display: block;
+    }   
+
+.image-product-div{
+    position: relative;
+}
+
+.image-product{
+    width: 100%;
+}
+.previous-div{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.previous{
+   width: 15px;
+   margin-left: -3px;
+}
+
+.next-div{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-right: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-description{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.product-description > h3 {
+    color: var(--storm-gray);
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.product-description > h1{
+
+    color: var(--midnight-black);
+    font-size: 1.87rem;
+
+}
+
+.product-description > p{
+    margin-top: 10px;
+    color: var(--storm-gray);
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 10px 0;
+}
+
+.price > span{
+    position: absolute;
+    left: 100px;
+    color: #ffffff;
+    background-color: var(--midnight-black);
+    border-radius: 4px;
+    padding: 2px;
+}
+.price h3{
+    color: var(--storm-gray);
+}
+.input-number{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 20px;
+    background-color: var(--whisper-white);
+    border-radius: 4px;
+}
+
+.minus{
+    width: 15px;
+}
+
+.plus{
+    width: 15px;
+}
+
+.button{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--tangerine-dream);
+    color: var(--midnight-black);
+    font-weight: 700;
+}
+
+}

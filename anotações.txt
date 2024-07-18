@@ -1,3 +1,6 @@
+começar começar a fazer as lightbox tanto do desktop quanto do mobile ,
+ fazer menu do mobile e começar a fazer javascript
+ 
+ fazer hover dos elementos
 
-
-arrumar código css para funcionar só no desktop para quando fizer o mobile é só referenciar o mobile
+ ver se todas as condições do brief foi atendido
