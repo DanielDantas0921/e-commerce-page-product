@@ -1,6 +1,8 @@
 @import "./0.colors.css";
 @import "./1.global.css";
 @import "./2.header-desktop.css";
-@import "./3.product-desktop.css";
+@import "./3.1.product-desktop.css";
+@import "./3.2.lightbox.css";
+@import "./3.3.cart.css";
 @import "./4.header-mobile.css";
 @import "./5.product-mobile.css";

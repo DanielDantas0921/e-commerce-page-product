@@ -3,12 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="src/img/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="src/img/favicon-32x32.png" />
     <title>Frontend Mentor | E-commerce product page</title>
     <link rel="stylesheet" href="./src/css/style.css" />
   </head>
@@ -27,19 +22,8 @@
         </nav>
       </div>
       <div class="cart-and-avatar">
-        <img
-          class="cart"
-          src="./src/img/icon-cart.svg"
-          alt="cart"
-          width="22"
-          height="20"
-        />
-        <img
-          src="./src/img/image-avatar.png"
-          alt="image avatar"
-          width="50"
-          height="50"
-        />
+        <img class="cart" src="./src/img/icon-cart.svg" alt="cart" width="22" height="20" />
+        <img src="./src/img/image-avatar.png" alt="image avatar" width="50" height="50" />
       </div>
     </header>
 
@@ -65,9 +49,8 @@
             Sneakers
           </h1>
           <p>
-            These low-profile sneakers are your perfect casual wear companion.
-            Featuring a durable rubber outer sole, they’ll withstand everything
-            the weather can offer.
+            These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand
+            everything the weather can offer.
           </p>
           <div class="prices">
             <h2>$125.00</h2>
@@ -80,16 +63,27 @@
               <span>0</span>
               <img class="plus" src="./src/img/icon-plus.svg" alt="plus" />
             </div>
-            <button>
-              <img src="./src/img/icon-cart.svg" alt="cart" /> Add to cart
-            </button>
+            <button><img src="./src/img/icon-cart.svg" alt="cart" /> Add to cart</button>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="lightbox">
-
+    <div class="lightbox" style="display: none;">
+      <div class="lightbox-content">
+        <img class="close" src="./src/img/icon-close.svg" alt="" />
+        <div class="large-image-div">
+          <div class="div-previous"><img class="previous" src="./src/img/icon-previous.svg" alt="previous" /></div>
+          <img class="large-image" src="./src/img/image-product-1.jpg" alt="image product 1" />
+          <div class="div-next"><img class="next" src="./src/img/icon-next.svg" alt="next" /></div>
+        </div>
+        <div class="thumbnail-images">
+          <img src="./src/img/image-product-1-thumbnail.jpg" alt="thumbnail image 1" />
+          <img src="./src/img/image-product-2-thumbnail.jpg" alt="thumbnail image 2" />
+          <img src="./src/img/image-product-3-thumbnail.jpg" alt="thumbnail image 3" />
+          <img src="./src/img/image-product-4-thumbnail.jpg" alt="thumbnail image 4" />
+        </div>
+      </div>
     </div>
 
     <header class="header-mobile">
@@ -106,17 +100,9 @@
     <section class="product-mobile">
       <div class="image-product-div">
         <div class="previous-div">
-          <img
-            class="previous"
-            src="./src/img/icon-previous.svg"
-            alt="previous"
-          />
+          <img class="previous" src="./src/img/icon-previous.svg" alt="previous" />
         </div>
-        <img
-          class="image-product"
-          src="./src/img/image-product-1.jpg"
-          alt="product-1"
-        />
+        <img class="image-product" src="./src/img/image-product-1.jpg" alt="product-1" />
         <div class="next-div">
           <img class="next" src="./src/img/icon-next.svg" alt="next" />
         </div>
@@ -125,21 +111,21 @@
       <div class="product-description">
         <h3>Sneaker Company</h3>
         <h1>Fall Limited Edition Sneakers</h1>
-        <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
-          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
-          <div class="price">
-           <h2>$125.00</h2>
-           <span>50%</span> 
-           <h3><del>$250.00</del></h3>
-          </div>
-          <div class="input-number">
-            <img class="minus" src="./src/img/icon-minus.svg" alt="minus" />
-            <span>0</span>
-            <img class="plus" src="./src/img/icon-plus.svg" alt="plus" />
-          </div>
-          <button class="button">
-            <img src="./src/img/icon-cart.svg" alt="cart" /> Add to cart
-          </button>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand
+          everything the weather can offer.
+        </p>
+        <div class="price">
+          <h2>$125.00</h2>
+          <span>50%</span>
+          <h3><del>$250.00</del></h3>
+        </div>
+        <div class="input-number">
+          <img class="minus" src="./src/img/icon-minus.svg" alt="minus" />
+          <span>0</span>
+          <img class="plus" src="./src/img/icon-plus.svg" alt="plus" />
+        </div>
+        <button class="button"><img src="./src/img/icon-cart.svg" alt="cart" /> Add to cart</button>
       </div>
     </section>
   </body>

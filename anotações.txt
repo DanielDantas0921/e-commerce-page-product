@@ -1,5 +1,11 @@
-começar começar a fazer as lightbox tanto do desktop quanto do mobile ,
- fazer menu do mobile e começar a fazer javascript
+
+fazer cesta do desktop 
+
+fazer  cesta do mobile
+ 
+ fazer menu do mobile e começar 
+ 
+  fazer javascript
  
  fazer hover dos elementos
 
