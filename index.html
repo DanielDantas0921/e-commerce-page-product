@@ -6,6 +6,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="src/img/favicon-32x32.png" />
     <title>Frontend Mentor | E-commerce product page</title>
     <link rel="stylesheet" href="./src/css/style.css" />
+    <script src="./src/js/script.js" type="module"></script>
   </head>
   <body>
     <header class="header-desktop">
@@ -24,6 +25,19 @@
       <div class="cart-and-avatar">
         <img class="cart" src="./src/img/icon-cart.svg" alt="cart" width="22" height="20" />
         <img src="./src/img/image-avatar.png" alt="image avatar" width="50" height="50" />
+        <div class="cart-div desktop" style="display: none">
+          <h3>Cart</h3>
+          <hr />
+          <div class="cart-item">
+            <img class="image-product" src="./src/img/image-product-1-thumbnail.jpg" alt="" />
+            <div class="cart-description">
+              <h3>Fall Limited Edition Sneakers</h3>
+              <p class="price">$125.00 x<span>Qtd3</span><span style="font-weight: 800">tl$375.00</span></p>
+            </div>
+            <img src="./src/img/icon-delete.svg" alt="" />
+          </div>
+          <button class="btn-checkout">Checkout</button>
+        </div>
       </div>
     </header>
 
@@ -35,10 +49,11 @@
           </div>
 
           <div class="thumbnail-images">
-            <img src="./src/img/image-product-1-thumbnail.jpg" alt="" />
-            <img src="./src/img/image-product-2-thumbnail.jpg" alt="" />
-            <img src="./src/img/image-product-3-thumbnail.jpg" alt="" />
-            <img src="./src/img/image-product-4-thumbnail.jpg" alt="" />
+           <div class="border"> <img class="active" src="./src/img/image-product-1-thumbnail.jpg" alt="" /></div>
+
+            <div><img src="./src/img/image-product-2-thumbnail.jpg" alt="" /></div>
+            <div><img src="./src/img/image-product-3-thumbnail.jpg" alt="" /></div>
+            <div><img src="./src/img/image-product-4-thumbnail.jpg" alt="" /></div>
           </div>
         </div>
 
@@ -69,7 +84,7 @@
       </div>
     </section>
 
-    <div class="lightbox" style="display: none;">
+    <div class="lightbox" style="display: none">
       <div class="lightbox-content">
         <img class="close" src="./src/img/icon-close.svg" alt="" />
         <div class="large-image-div">
@@ -85,6 +100,8 @@
         </div>
       </div>
     </div>
+
+  
 
     <header class="header-mobile">
       <div class="menu-and-logo">
@@ -127,6 +144,30 @@
         </div>
         <button class="button"><img src="./src/img/icon-cart.svg" alt="cart" /> Add to cart</button>
       </div>
+
+      <div class="cart-div mobile" style="display: none">
+        <h3>Cart</h3>
+        <hr />
+        <div class="cart-item">
+          <img class="image-product" src="./src/img/image-product-1-thumbnail.jpg" alt="" />
+          <div class="cart-description">
+            <h3>Fall Limited Edition Sneakers</h3>
+            <p class="price">$125.00 x<span>Qtd3</span><span style="font-weight: 800">tl$375.00</span></p>
+          </div>
+          <img class="delete" src="./src/img/icon-delete.svg" alt="" />
+        </div>
+        <button class="btn-checkout">Checkout</button>
+      </div>
     </section>
+    <div class="container-menu-mobile none-menu" style="display: none">
+      <div class="menu-mobile">
+        <img class="icon" src="./src/img/icon-close.svg" alt="close" />
+        <h3>Collections</h3>
+        <h3>Men</h3>
+        <h3>Women</h3>
+        <h3>About</h3>
+        <h3>Contact</h3>
+      </div>
+    </div>
   </body>
 </html>

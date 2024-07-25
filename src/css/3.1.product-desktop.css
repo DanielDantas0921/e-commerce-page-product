@@ -1,6 +1,7 @@
 .product-desktop .product-container{
     display: grid;
     grid-template-columns: 1fr 1.5fr;
+    align-items: center;
     padding: 2.75rem 7.5rem;
     gap: 5rem;
     max-width: 1200px;
@@ -12,6 +13,7 @@
     width: 100%;
     min-width: 250px;
     border-radius: 10px;
+    cursor: pointer;
     
 }
 
@@ -21,10 +23,27 @@
     margin-top: 1rem;
 }
 
-.product-desktop .thumbnail-images img{
+.product-desktop .thumbnail-images div{
     width: 23%;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+.product-desktop .thumbnail-images div img{
     border-radius: 10px;
 }
+
+.active{
+    opacity: 0.5;
+    border-radius: 5px;
+}
+
+.border{
+    width: auto;
+    height: auto;
+    border: 3px solid var(--tangerine-dream);
+}
+
 .product-desktop .product-description{
     padding: 80px 0;
 }

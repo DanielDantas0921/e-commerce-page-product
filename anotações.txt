@@ -1,11 +1,23 @@
-
-fazer cesta do desktop 
-
-fazer  cesta do mobile
  
- fazer menu do mobile e começar 
  
-  fazer javascript
+  e começar fazer javascript(
+
+    fazer lightbox funcionar
+    fazer as trocas de imagens de thumbnail do lightbox
+
+    fazer as trocas de imagens de thumbnail do product desktop ( via imagem thumbnail)
+
+    fazer as trocas de imagem no mobile (via botão)
+
+
+    fazer a parte de adicionar no carrinho no desktop e retirar itens do carrinho e calcular o total
+
+    fazer a parte de remover do carrinho no mobile  e retirar itens do carrinho e calcular o total
+
+
+  )
+
+  fazer imagem thumnail ser selecionado e ficar opaco com uma classe
  
  fazer hover dos elementos
 
