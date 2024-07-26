@@ -111,11 +111,13 @@
 }
 .product-desktop .minus{
     cursor: pointer;
+    padding: 10px 0;
     
 }
 
 .product-desktop .plus{
     cursor:pointer;
+    padding: 5px 0;
     
 }
 

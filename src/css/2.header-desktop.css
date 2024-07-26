@@ -39,6 +39,11 @@
 .header-desktop .cart-and-avatar .cart{
     width: 30px;
     margin-right: 2.8rem;
+    cursor: pointer;
+}
+
+.header-desktop .delete {
+    cursor: pointer;
 }
 
 @media (max-width: 900px){
