@@ -134,6 +134,7 @@
     background-color: var(--tangerine-dream);
     color: var(--midnight-black);
     font-weight: 700;
+    cursor: pointer;
 }
 @media (max-width: 1200px){
     .product-desktop .product-container{

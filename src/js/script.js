@@ -8,11 +8,11 @@ lightbox.addEventListener("click", function () {
   console.log("apertou na área");
 });
 
-window.addEventListener("click", function (event){
-    if(event.target == lightbox){
-        lightbox.style.display = "none"
-    }
-})
+window.addEventListener("click", function (event) {
+  if (event.target == lightbox) {
+    lightbox.style.display = "none";
+  }
+});
 
 const largeImage = document.querySelector(".large-image");
 largeImage.addEventListener("click", function () {
@@ -119,77 +119,84 @@ const minusIconProductDesktop = document.querySelector(".product-desktop .input-
 const plusIconProductDesktop = document.querySelector(".product-desktop .input-number .plus");
 const cartImgDesktop = document.querySelector(".header-desktop .cart-and-avatar .cart");
 const cartDivAndDesktop = document.querySelector(".header-desktop .cart-div.desktop");
-let numberSpanGlobal = 0;
 
-function changeNumberSpan(number) {
-  const numberSpan = Number(spanNumberProductDesktop.innerText);
+let stateNumberSpanGlobal = {
+  number: 0
+}
+
+function changeNumberSpan(number, spanNumberProductMobileOrDesktop , stateNumberSpanGlobal) {
+  const numberSpan = Number(spanNumberProductMobileOrDesktop.innerText);
   const result = numberSpan + number;
-  spanNumberProductDesktop.innerText = result;
-  numberSpanGlobal = result;
+  spanNumberProductMobileOrDesktop.innerText = result;
+ stateNumberSpanGlobal.number = result;
+
+  console.log("dentro da função changeNumberSpan o numberSpanGlobal é " + stateNumberSpanGlobal.number)
   if (result == -1) {
     console.log("estou sendo acessado o if");
-    spanNumberProductDesktop.innerText = "0";
-    numberSpanGlobal = 0;
+    spanNumberProductMobileOrDesktop.innerText = "0";
+    stateNumberSpanGlobal.number = 0;
   }
-
 }
 
 minusIconProductDesktop.addEventListener("click", function () {
-  changeNumberSpan(-1);
+  changeNumberSpan(-1,spanNumberProductDesktop, stateNumberSpanGlobal);
 });
 plusIconProductDesktop.addEventListener("click", function () {
-  changeNumberSpan(1);
+  changeNumberSpan(1,spanNumberProductDesktop, stateNumberSpanGlobal);
+  console.log( "na função plusIconProductDesktop o numberSpanGlobalDesktop é " + stateNumberSpanGlobal.number)
 });
 
 cartImgDesktop.addEventListener("click", function () {
   if (cartDivAndDesktop.style.display == "none") {
     cartDivAndDesktop.style.display = "block";
-  } else{
-    cartDivAndDesktop.style.display = "none"
+  } else {
+    cartDivAndDesktop.style.display = "none";
   }
 });
 
+const divCartItem = document.querySelector(".header-desktop .cart-item"); //nível 0
 
-const divCartItem = document.querySelector(".header-desktop .cart-item") //nível 0
-
-function mountCartItemElement(divCartItem){
-  divCartItem.innerHTML = ""
-  if(numberSpanGlobal == 0){
-    return
+function mountCartItemElement(divCartItem, stateNumberSpanGlobal) {
+  divCartItem.innerHTML = "";
+  if (stateNumberSpanGlobal.number == 0) {
+    return;
   }
-  
-  const imgProduct = document.createElement("img") // nível 1
-  imgProduct.src = "./src/img/image-product-1-thumbnail.jpg"
-  imgProduct.classList.add("image-product")
 
-  const divcartDescription = document.createElement("div") // nível 1
-  divcartDescription.classList.add("cart-description")
-  const cartDescriptionH3 = document.createElement("h3") //nível 2
-  cartDescriptionH3.innerText = "Fall Limited Edition Sneakers"
-  const cartDescriptionP = document.createElement("p") // nível 2
-  cartDescriptionP.innerHTML= "<p class='price'>$125.00 x <span>" + numberSpanGlobal + "</span><span style='font-weight: 800'> = $" +
-  (125.00 * numberSpanGlobal).toFixed(2) + "</span></p>"
-  cartDescriptionP.classList.add("price")
-  divcartDescription.append(cartDescriptionH3, cartDescriptionP)
-  
+  const imgProduct = document.createElement("img"); // nível 1
+  imgProduct.src = "./src/img/image-product-1-thumbnail.jpg";
+  imgProduct.classList.add("image-product");
 
-  const imgIconDelete = document.createElement("img") //nível 1
-  imgIconDelete.src = "./src/img/icon-delete.svg"
-  imgIconDelete.classList.add("delete")
+  const divcartDescription = document.createElement("div"); // nível 1
+  divcartDescription.classList.add("cart-description");
+  const cartDescriptionH3 = document.createElement("h3"); //nível 2
+  cartDescriptionH3.innerText = "Fall Limited Edition Sneakers";
+  const cartDescriptionP = document.createElement("p"); // nível 2
+  cartDescriptionP.innerHTML =
+    "<p class='price'>$125.00 x <span>" +
+    stateNumberSpanGlobal.number +
+    "</span><span style='font-weight: 800'> = $" +
+    (125.0 *  stateNumberSpanGlobal.number).toFixed(2) +
+    "</span></p>";
+  cartDescriptionP.classList.add("price");
+  divcartDescription.append(cartDescriptionH3, cartDescriptionP);
 
-  divCartItem.append(imgProduct, divcartDescription, imgIconDelete)
+  const imgIconDelete = document.createElement("img"); //nível 1
+  imgIconDelete.src = "./src/img/icon-delete.svg";
+  imgIconDelete.classList.add("delete");
+
+  divCartItem.append(imgProduct, divcartDescription, imgIconDelete);
+
+
+  const deleteIconDesktop = document.querySelector(".header-desktop .cart-item .delete");
+  deleteIconDesktop.addEventListener("click", function () {
+    divCartItem.innerHTML = "";
+  });
 }
 
-
-const btnCheckoutDesktop = document.querySelector(".product-desktop .input-number-and-button-cart button")
-btnCheckoutDesktop.addEventListener("click", function (){
-  mountCartItemElement(document.querySelector(".header-desktop .cart-item"))
-})
-
-const deleteIconDesktop = document.querySelector(".header-desktop .cart-item .delete")
-deleteIconDesktop.addEventListener("click", function(){
-  divCartItem.innerHTML = ""
-})
+const btnCheckoutDesktop = document.querySelector(".product-desktop .input-number-and-button-cart button");
+btnCheckoutDesktop.addEventListener("click", function () {
+  mountCartItemElement(document.querySelector(".header-desktop .cart-item"), stateNumberSpanGlobal);
+});
 
 // mobile ( trocar imagens) -------------------------------------------------
 
@@ -215,3 +222,29 @@ previousIconMobile.addEventListener("click", function () {
 nextIconMobile.addEventListener("click", function () {
   changeImageProductMobile(1);
 });
+
+// cart mobile -------------------------------
+
+const cartIconMobile = document.querySelector(".header-mobile .cart-and-avatar .cart");
+const cartDivMobile = document.querySelector(".product-mobile .cart-div.mobile");
+const plusIconProductMobile = document.querySelector(".product-mobile .plus")
+const minusIconProductMobile = document.querySelector(".product-mobile .minus")
+const spanNumberProductMobile = document.querySelector(".product-mobile .input-number span")
+
+cartIconMobile.addEventListener("click", function () {
+  if (cartDivMobile.style.display == "none") {
+    cartDivMobile.style.display = "block";
+  } else {
+    cartDivMobile.style.display = "none";
+  }
+});
+
+
+plusIconProductMobile.addEventListener("click", function(){
+  changeNumberSpan(1 , spanNumberProductMobile , stateNumberSpanGlobal )
+})
+
+minusIconProductMobile.addEventListener("click", function(){
+  changeNumberSpan(-1 , spanNumberProductMobile , stateNumberSpanGlobal )
+})
+

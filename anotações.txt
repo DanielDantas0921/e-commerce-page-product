@@ -9,11 +9,11 @@
     fazer a parte de adicionar no carrinho no desktop e retirar itens do carrinho e calcular o total(
 
       fazer a parte do mobile do carrinho(
-      montar os elementos via javascript do carrinho e em seguida fazer uma lógica para mostrar ele dentro do carrinho mostrando
-      quantidade e total
 
-      fazer lógica para remover itens do carrinho
-      )
+       
+
+        reaproveitar a função mountCartItemElement(divCartItem, stateNumberSpanGlobal ( o objeto stateNumberSpanGlobal)) e 
+        fazer isso funcionar no mobile
     )
 
 
@@ -26,3 +26,5 @@
  fazer hover dos elementos
 
  ver se todas as condições do brief foi atendido
+
+
