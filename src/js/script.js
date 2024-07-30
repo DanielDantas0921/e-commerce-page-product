@@ -2,10 +2,8 @@
 
 const lightbox = document.querySelector(".lightbox");
 
-console.log("ola mundo");
 
 lightbox.addEventListener("click", function () {
-  console.log("apertou na área");
 });
 
 window.addEventListener("click", function (event) {
@@ -74,7 +72,6 @@ function setBorderAndOpacity(index) {
 }
 
 function resetThumbnailImagesBorderAndOpacity() {
-  // remover a borda e depois a classe active
   thumbnailDesktopDivs.forEach(function (elementDiv) {
     if (elementDiv.classList.contains("border")) {
       const activeImg = elementDiv.querySelector("img");
@@ -130,9 +127,7 @@ function changeNumberSpan(number, spanNumberProductMobileOrDesktop , stateNumber
   spanNumberProductMobileOrDesktop.innerText = result;
  stateNumberSpanGlobal.number = result;
 
-  console.log("dentro da função changeNumberSpan o numberSpanGlobal é " + stateNumberSpanGlobal.number)
   if (result == -1) {
-    console.log("estou sendo acessado o if");
     spanNumberProductMobileOrDesktop.innerText = "0";
     stateNumberSpanGlobal.number = 0;
   }
@@ -186,7 +181,6 @@ function mountCartItemElement(divCartItem, stateNumberSpanGlobal) {
   divCartItem.append(imgProduct, divcartDescription, imgIconDelete);
 
 
-  // const deleteIconDesktop = document.querySelector(".header-desktop .cart-item .delete");
   const deleteIconDesktop = divCartItem.querySelector(".delete")
   deleteIconDesktop.addEventListener("click", function () {
     divCartItem.innerHTML = "";
