@@ -167,7 +167,7 @@
     font-size: 1.5rem;
 } 
 
-.cart-div.mobile .price{
+.cart-div.mobile .cart-description .price{
     font-size: 18px;
     display: flex;
     gap: 5px;

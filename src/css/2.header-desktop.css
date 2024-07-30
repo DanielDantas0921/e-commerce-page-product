@@ -28,7 +28,27 @@
     
 }
 
+.header-desktop .logo-and-nav nav ul li{
+    cursor: pointer;
+    position: relative;
+    
+}
 
+.header-desktop .logo-and-nav nav ul li::after{
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: var(--tangerine-dream);
+    transition: width 0.3s ease-in-out;
+}
+
+.header-desktop .logo-and-nav nav ul li:hover::after{
+    width: 100%;
+}
 
 .header-desktop .cart-and-avatar{
     display: flex;
@@ -40,6 +60,11 @@
     width: 30px;
     margin-right: 2.8rem;
     cursor: pointer;
+}
+
+.header-desktop .cart-and-avatar .avatar:hover{
+    border: 2px  solid var(--tangerine-dream);
+    border-radius: 50%;
 }
 
 .header-desktop .delete {

@@ -29,6 +29,10 @@
     cursor: pointer;
 
 }
+
+.product-desktop .thumbnail-images div:hover{
+    opacity: 0.3;
+}
 .product-desktop .thumbnail-images div img{
     border-radius: 10px;
 }
@@ -136,6 +140,11 @@
     font-weight: 700;
     cursor: pointer;
 }
+.product-desktop .input-number-and-button-cart button:hover{
+    background-color: #FFAB6A;
+}
+
+
 @media (max-width: 1200px){
     .product-desktop .product-container{
         grid-template-columns: 0.8fr 1fr;
